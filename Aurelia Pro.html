@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aurelia Dental — Bright. Healthy. Confident.</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Inter',sans-serif;background:#f6fbfa;color:#123540;line-height:1.7}
+h1,h2,h3{font-family:'Playfair Display',serif}
+.container{max-width:1180px;margin:auto;padding:0 24px}
+.topbar{background:linear-gradient(90deg,#0d7a8a,#14b8a6);color:#fff;text-align:center;padding:9px;font-size:13px;letter-spacing:.5px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0;position:sticky;top:0;background:rgba(246,251,250,.96);backdrop-filter:blur(10px);z-index:20}
+.logo{font-size:30px;font-weight:700}.logo span{color:#0d7a8a}
+.links a{margin:0 13px;text-decoration:none;color:#123540;font-weight:600;font-size:15px}
+.btn{display:inline-block;padding:14px 34px;border-radius:50px;text-decoration:none;font-weight:700;border:none;cursor:pointer;transition:.3s}
+.btn-teal{background:#0d7a8a;color:#fff}.btn-teal:hover{background:#0a5e6b}
+.btn-gold{background:#d4a94e;color:#123540}
+.btn-dark{background:#123540;color:#fff}
+.btn-line{border:2px solid #0d7a8a;color:#0d7a8a;background:transparent}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:20px;border-radius:28px;overflow:hidden;box-shadow:0 30px 60px rgba(13,122,138,.18)}
+.hero-txt{background:linear-gradient(135deg,#0b2f40,#0d7a8a);color:#eaf7f6;padding:65px 55px}
+.hero-txt h1{font-size:56px;line-height:1.08}.hero-txt h1 em{color:#f2cd7e}
+.hero-img img{width:100%;height:100%;min-height:520px;object-fit:cover;display:block}
+.badges{display:flex;gap:10px;margin:22px 0;flex-wrap:wrap}
+.badges span{background:rgba(255,255,255,.12);border:1px solid #7fd4cc;color:#c8f0ec;padding:7px 16px;border-radius:30px;font-size:13px}
+.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:30px 0}
+.strip div{border-radius:18px;padding:26px;text-align:center;color:#fff}
+.s1{background:linear-gradient(135deg,#0d7a8a,#14b8a6)}.s2{background:linear-gradient(135deg,#123540,#2b6a8a)}.s3{background:linear-gradient(135deg,#d4a94e,#f2cd7e);color:#123540}.s4{background:linear-gradient(135deg,#7c3aed,#c084fc)}
+.sec{padding:65px 0}.sec h2{font-size:44px;text-align:center}.sub{text-align:center;opacity:.6;margin-bottom:32px}
+.treat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.tcard{background:#fff;border-radius:22px;padding:30px;box-shadow:0 12px 30px rgba(0,0,0,.07);border-top:5px solid #14b8a6}
+.tcard.gold{border-color:#d4a94e}.tcard.purple{border-color:#7c3aed}
+.price{font-size:30px;font-weight:800;color:#0d7a8a}.tcard ul{list-style:none;line-height:2.1;font-size:15px;margin:12px 0}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:36px;background:#fff;border-radius:28px;padding:50px;align-items:center;box-shadow:0 15px 40px rgba(0,0,0,.07)}
+.split img{width:100%;border-radius:22px;height:440px;object-fit:cover}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}.gallery img{height:220px;width:100%;object-fit:cover;border-radius:16px}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+.rev{border-radius:20px;padding:28px;color:#fff}.r1{background:linear-gradient(135deg,#0d7a8a,#0b4a5f)}.r2{background:linear-gradient(135deg,#123540,#3b6a85)}.r3{background:linear-gradient(135deg,#b98e36,#f2cd7e);color:#123540}
+.docs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px;text-align:center}
+.docs img{width:100%;height:300px;object-fit:cover;border-radius:20px}
+.book{display:grid;grid-template-columns:1fr 380px;gap:26px;background:linear-gradient(135deg,#0d7a8a,#123540);border-radius:28px;padding:50px;color:#fff;align-items:center}
+.form{background:#fff;color:#123540;border-radius:20px;padding:30px}
+.form input,.form select{width:100%;padding:13px;margin:8px 0;border-radius:12px;border:1px solid #cfe3e1}
+footer{background:#0b2f40;color:#9fc3c9;text-align:center;padding:36px;margin-top:50px;border-radius:28px 28px 0 0}
+@media(max-width:900px){.hero,.split,.book{grid-template-columns:1fr}.treat-grid,.reviews,.docs,.strip,.gallery{grid-template-columns:1fr 1fr}.hero-txt h1{font-size:40px}.links{display:none}}
+@media(max-width:600px){.treat-grid,.reviews,.docs,.strip,.gallery{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="topbar">✦ NEW PATIENTS — Free checkup + X-ray + smile scan (worth $150) | This week only</div>
+<div class="container">
+<nav><div class="logo">Aurelia <span>Dental</span></div><div class="links"><a href="#">Home</a><a href="#treats">Treatments</a><a href="#">Doctors</a><a href="#">Gallery</a><a href="#">Reviews</a></div><a href="#book" class="btn btn-teal">Book Visit</a></nav>
+<div class="hero"><div class="hero-txt"><p style="letter-spacing:4px;color:#7fd4cc;font-size:13px">★ RATED 4.9 — 12,000+ SMILES</p><h1>A Smile That <em>Shines</em> With Confidence</h1><p style="opacity:.85;margin:18px 0">Painless modern dentistry — 3D imaging, laser, same-day crowns & luxury comfort. Veneers, implants, Invisalign, kids care — all under one roof.</p><div class="badges"><span>✔ Painless Promise</span><span>✔ 0% Installments</span><span>✔ Same-Day Crowns</span></div><a href="#book" class="btn btn-gold">Book Free Consultation</a> <a href="#treats" class="btn btn-line" style="border-color:#f2cd7e;color:#f2cd7e;margin-left:8px">Our Treatments</a><p style="margin-top:18px;font-size:14px;opacity:.7">📍 123 Bright Ave, Downtown • Open Mon–Sat 9AM–9PM • 📞 (555) 123-4567</p></div><div class="hero-img"><img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=900&q=80"></div></div>
+<div class="strip"><div class="s1"><h3>15+ Years</h3><p>Clinical excellence</p></div><div class="s2"><h3>12k Smiles</h3><p>Transformed</p></div><div class="s3"><h3>4.9 ★ Rating</h3><p>2,400+ reviews</p></div><div class="s4"><h3>24/7 Emergency</h3><p>Always here for you</p></div></div>
+<div class="sec" id="treats"><h2>Treatments & Prices</h2><p class="sub">Transparent pricing — free plan before you start</p><div class="treat-grid">
+<div class="tcard"><h3>✨ Whitening & Veneers</h3><p class="price">$199 <small style="font-size:14px;opacity:.6">from</small></p><ul><li>✔ 1-hour Zoom whitening</li><li>✔ E-max veneers, digital preview</li><li>✔ Up to 8 shades brighter</li></ul><a href="#book" class="btn btn-line" style="width:100%;text-align:center">Book</a></div>
+<div class="tcard gold"><p style="background:#d4a94e;display:inline-block;padding:4px 14px;border-radius:20px;font-size:12px;font-weight:700">MOST POPULAR</p><h3>🦷 Implants All-on-4</h3><p class="price">$499 <small style="font-size:14px;opacity:.6">/ implant</small></p><ul><li>✔ Swiss implants, lifetime warranty</li><li>✔ 3D-guided surgery in 1 day</li><li>✔ 0% installment 12 months</li></ul><a href="#book" class="btn btn-gold" style="width:100%;text-align:center">Book</a></div>
+<div class="tcard purple"><h3>👶 Kids & Invisalign</h3><p class="price">Free <small style="font-size:14px;opacity:.6">consult</small></p><ul><li>✔ Invisible aligners from $1,900</li><li>✔ Gentle kids zone + play area</li><li>✔ Free retainer included</li></ul><a href="#book" class="btn btn-line" style="width:100%;text-align:center;border-color:#7c3aed;color:#7c3aed">Book</a></div>
+</div></div>
+<div class="split"><img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80"><div><p style="color:#0d7a8a;font-weight:700;letter-spacing:2px">WHY AURELIA</p><h2 style="font-size:40px;text-align:left">Dentistry That Feels Like a Spa</h2><p style="opacity:.7;margin:14px 0">Noise-cancelling headphones, aromatherapy, weighted blankets — and dentists who explain everything step by step.</p><ul style="line-height:2.2;list-style:none"><li>🔬 3D CBCT + Digital Smile Preview</li><li>💫 Painless Laser Dentistry</li><li>🛡️ 5-Star Sterilization Standard</li><li>💳 Clear Quote Before Treatment</li></ul><br><a href="#book" class="btn btn-dark">See Offers</a></div></div>
+<div class="sec"><h2>Clinic Gallery</h2><div class="gallery"><img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=500&q=80"><img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=500&q=80"><img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=500&q=80"><img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=500&q=80"></div></div>
+<div class="sec" style="padding-top:0"><h2>Meet Our Doctors</h2><div class="docs"><div><img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=500&q=80"><h3>Dr. Amelia Hart</h3><p style="font-size:14px;opacity:.6">Cosmetic & Veneers • 12 yrs</p></div><div><img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=500&q=80"><h3>Dr. Daniel Ross</h3><p style="font-size:14px;opacity:.6">Implantology • 15 yrs</p></div><div><img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=500&q=80"><h3>Dr. Lena Kim</h3><p style="font-size:14px;opacity:.6">Ortho & Kids • 10 yrs</p></div></div>
+<div class="reviews"><div class="rev r1">⭐⭐⭐⭐⭐<p>"Terrified of dentists — zero pain, veneers look natural!"</p><b>— Sarah M.</b></div><div class="rev r2">⭐⭐⭐⭐⭐<p>"Implant in one morning, back to work next day."</p><b>— James R.</b></div><div class="rev r3">⭐⭐⭐⭐⭐<p>"Kids actually love going. Clean, kind, super modern."</p><b>— Lena K.</b></div></div></div>
+<div class="book" id="book"><div><h2 style="font-size:42px">Free Smile Scan — 20 Spots Left</h2><p style="margin:12px 0;opacity:.9">Free checkup + X-ray + full plan. Book in 30 seconds, we confirm by SMS.</p><p>📞 (555) 123-4567 • Emergency 24/7</p></div><div class="form"><h3>Book Your Visit</h3><input placeholder="Full name"><input placeholder="Phone"><select><option>Checkup & Cleaning</option><option>Whitening / Veneers</option><option>Implant Consult</option><option>Kids / Braces</option></select><input type="date"><button class="btn btn-teal" style="width:100%" onclick="alert('Thank you! We will confirm your visit shortly.')">Confirm Booking</button></div></div>
+<footer><h3 style="color:#fff;font-size:24px">Aurelia Dental</h3><p>123 Bright Ave • hello@aurelia.com • @aurelia.dental • © 2026</p></footer>
+</div>
+</body>
+</html>
